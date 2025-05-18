@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramogi Innovations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+
+  <style>
+    /* Slider styles */
+    * {
+      box-sizing: border-box;
+    }
+    .slider {
+      position: relative;
+      max-width: 700px;
+      width: 90%;
+      background: lch(100% 0.01 296.81);
+      border-radius: 10px;
+      overflow: hidden;
+      margin:  auto; /* Center the slider */
+    }
+    .slides {
+      display: flex;transition: transform 0.3s ease-in-out;
+      width: 100%;
+    }
+    .slide {
+      min-width: 100%;
+      user-select: none;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide img {
+     max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .slide p {
+      font-size: 1rem;
+      color: #666;
+      max-width: 500px;
+      text-align: center;
+    }
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(50, 50, 50, 0.4);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      padding: 10px 15px;
+      cursor: pointer;border-radius: 50%;
+      transition: background 0.3s;
+      user-select: none;
+    }
+    .nav-btn:hover {
+      background: rgba(50, 50, 50, 0.8);
+    }
+    .prev {
+      left: 15px;
+    }
+    .next {
+      right: 15px;
+    }
+    .dots {
+      text-align: center;
+      padding: 15px 0;
+      background: #fff;
+      border-top: 1px solid #ddd;}
+    .dot {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin: 0 6px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .dot.active {
+      background-color: #4a90e2;
+    }
+ </style>
+</head>
+<body>
+
+<header>
+  <h1>Ramogi Innovations</h1>
+  <p>Where Innovation Meets Discovery for Real-World Impact</p>
+</header>
+<header>
+<nav>
+  <a href="#home" tabindex="1">Home</a>
+  <a href="#about" tabindex="2">About Us</a>
+  <a href="#products" tabindex="3">Products</a>
+  <a href="#products" tabindex="03">Projects</a>
+  <a href="#research" tabindex="4">Research Papers</a>
+  <a href="#contact" tabindex="5">Contact</a>
+</nav>
+<p>change lives with innovation</p>
+</header>
+<main class="container">
+  <section id="home" tabindex="6" aria-label="Home Section"><!---
+    <section class="hero">
+        <img src="images/b1" alt="Ramogi innovations" />
+        <div class="hero-text">
+            <h1>Welcome to Ramogi Innovations</h1>
+            <p>Where Innovation Meets Discovery for Real-World Impact Your partner in innovative solutions.</p>
+   
+    </section>
+    <h2>Welcome to Ramogi Innovations</h2>
+    <p>We focus on groundbreaking research and innovations in biomedicine, aiming to create solutions that enhance the quality of life and contribute to a better world.</p>--->
+<!-- Slideshow Section --><section>
+    <div class="slider" aria-label="Image slideshow">
+      <div class="slides">
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 1">
+          <img src="images/slide (3).jpeg" alt="Mountain Lake" />
+          <h2>Beautiful Mountain Lake</h2>
+          <p>Experience the serenity of crystal clear waters surrounded by towering peaks.</p>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2">
+          <img src="images/slide (2).jpeg" alt="Forest Road" />
+          <h2>Peaceful Forest Path</h2>
+          <p>Walk through lush green forests and breathe in the fresh woodland air.</p>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3">
+          <img src="images/slide.jpeg" alt="Desert Sunset" />
+          <h2>Desert Sunset Colors</h2>
+          <p>Witness breathtaking sunrises and sunsets in the vast desert landscapes.</p>
+        </div> </div>
+      <button class="nav-btn prev" aria-label="Previous slide">&#10094;</button>
+      <button class="nav-btn next" aria-label="Next slide">&#10095;</button>
+      <div class="dots" role="tablist" aria-label="Slide navigation">
+        <button class="dot active" role="tab" aria-selected="true" aria-controls="slide1" tabindex="0"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide2" tabindex="-1"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide3" tabindex="-1"></button>
+      </div>
+    </div></section>
+  </section>
+  <!-- The rest of your sections (about, products, research, contact, etc.) remain unchanged -->
+  <!-- ... -->
+        
+  <section id="about" tabindex="7" aria-label="About Us Section">
+    <h2>About Us</h2>
+    <p>At Ramogi Innovations, our team is dedicated to advancing biomedical research. Meet our key personnel:</p>
+
+    <div class="team-member" tabindex="8">
+      <img src="images/b1.jpeg" alt="Byron Oyoo" />
+      <div class="member-info">
+        <div class="member-name">Byron Oyoo</div>
+        <div class="member-role">Managing Director</div>
+        <div class="member-email"><a href="mailto:oyoobyron607@gmail.com">oyoobyron607@gmail.com</a></div>
+        <div class="member-comment">"Leading Ramogi Innovations with vision and passion to drive real-world biomedical breakthroughs."</div>
+      </div>
+    </div>
+
+    <div class="team-member" tabindex="9">
+      <img src="images/j1.jpeg" alt="Siyapei " />
+      <div class="member-info">
+        <div class="member-name">Siyapei Joy</div>
+        <div class="member-role">Lead Field Researcher</div>
+        <div class="member-email"><a href="mailto:siyapeijoy@gmail.com">siyapeijoy@gmail.com</a></div>
+        <div class="member-comment">"Committed to scientific excellence and innovative research methodologies in the field."</div>
+      </div>
+    </div>
+    <div class="team-member" tabindex="10">
+      <img src="images/n1.jpg" alt="norah" />
+      <div class="member-info">
+        <div class="member-name">Norah Muhune</div>
+        <div class="member-role"> Field Researcher</div>
+        <div class="member-email"><a href="mailto:norahmuhune@gmail.com">norahmuhune@gmail.com</a></div>
+        <div class="member-comment">"Committed to scientific excellence and innovative research methodologies in the field."</div>
+      </div>
+    </div>
+     <div class="team-member" tabindex="11">
+      <img src="images/p1.JPG" alt="Siyapei Joy - Lead Field Researcher" />
+      <div class="member-info">
+        <div class="member-name">Paschal Wandera</div>
+        <div class="member-role"> Research Software Engineer</div>
+        <div class="member-email"><a href="mailto:siyapeijoy@gmail.com">paschalwao@gmail.com</a>
+        <div class="member-comment">"Ramogi  innovation is committed to changing the world us we know it today"</div>
+      </div>
+    </div></div></div>-->
+    <div class="team-member" tabindex="12">
+      <img src="images/o1.jpeg" alt="Ojilumba Ramogi - Lead Research Scientist" />
+      <div class="member-info">
+        <div class="member-name">Ojilumba Ramogi</div>
+        <div class="member-role">Lead Research Scientist</div>
+        <div class="member-email"><a href="mailto:ojilumba123ramogi@gmail.com">ojilumba123ramogi@gmail.com</a></div>
+        <div class="member-comment">"Pioneering innovative biomedical solutions to improve health outcomes worldwide."</div>
+      </div> 
+</div>
+      <div class="team-member" tabindex="13">
+      <img src="images/r1" alt="Ryan" />
+      <div class="member-info">
+        <div class="member-name">Ryan Kipkoech</div>
+        <div class="member-role">Lab Scientist</div>
+        <div class="member-email"><a href="mailto:ryankipkoech@gmail.com">ryankipkoech@gmail.com</a></div>
+        <div class="member-comment">"I focuse on prototype development and lab-scale simulations. My hands-on expertise helps transform ideas into tangible models, facilitating the transition from theory to viable productsPioneering innovative biomedical solutions to improve health outcomes worldwide."</div>
+      </div></div>
+      <div class="team-member" tabindex="14">
+      <img src="images/m1.jpeg" alt="mobens" />
+      <div class="member-info">
+        <div class="member-name">Mobens Onchiri</div>
+        <div class="member-role">Lab Scientist</div>
+        <div class="member-email"><a href="mailto:mobensonchiri@gmail.com">mobensonchiri@gmail.com</a></div>
+        <div class="member-comment">"I play a crucial role in validating concepts through rigorous laboratory testing. I specializes in material analysis and experimental design, ensuring that all innovations meet the highest standards of scientific robustness."</div>
+      </div></div>
+      <div class="team-member" tabindex="15">
+      <img src="images/l1.jpg" alt="lisa" />
+      <div class="member-info">
+        <div class="member-name">Lisa Bwire</div>
+        <div class="member-role">Field Research Scientist</div>
+        <div class="member-email"><a href="mailto:lisabwire@gmail.com">lisabwire@gmail.com</a></div>
+        <div class="member-comment">"I bring a keen eye for detail and a community-first approach to data collection. My work ensures that our solutions are grounded in real-world needs, capturing critical field insights that drive product relevance and adaptability.
+."</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" tabindex="11" aria-label="Products Section">
+    <h2>Our Products</h2>
+    <div class="product">
+      <h3>Biomedical Innovation Kit</h3>
+      <p>An advanced toolkit designed to accelerate biomedical research and product development.</p>
+      <button type="button" tabindex="12" onclick="alert('Purchase functionality will be implemented soon!')">Purchase</button>
+    </div>
+    <div class="product">
+      <h3>Diagnostic Tool Prototype</h3>
+      <p>A cutting-edge prototype for rapid diagnosis, developed in-house with the latest research findings.</p>
+      <button type="button" tabindex="13" onclick="alert('Purchase functionality will be implemented soon!')">Purchase</button>
+    </div>
+  </section>
+
+  <section id="research" tabindex="14" aria-label="Research Papers Section">
+    <h2>Research Papers</h2>
+    <ul>
+      <li><a href="#" tabindex="15" aria-label="Research Paper 1">Research Paper: Novel Biomedicine Approaches</a></li>
+      <li><a href="#" tabindex="16" aria-label="Research Paper 2">Research Paper: Innovations in Diagnostic Techniques</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" tabindex="17" aria-label="Contact Section">
+    <h2>Contact Us</h2>
+    <form class="contact-form" aria-label="Contact form" onsubmit="submitContactForm(event)" tabindex="18">
+      <input type="text" name="name" placeholder="Your Name" required aria-required="true" tabindex="19" />
+      <input type="email" name="email" placeholder="Your Email" required aria-required="true" tabindex="20" />
+      <textarea name="message" placeholder="Your Message" required aria-required="true" tabindex="21"></textarea>
+      <button type="submit" tabindex="22">Send Message</button>
+    </form>
+    <p style="margin-top:1.5rem; user-select:none;">
+      <strong>WhatsApp: </strong><a href="https://wa.me/254705940726" target="_blank" rel="noopener" tabindex="23">+254705940726</a><br/>
+      <strong>General Emails: </strong><br/>
+      <a href="mailto:callidusHumanus@gmail.com" tabindex="24">callidusHumanus@gmail.com</a>, <a href="mailto:lexusinfinita@gmail.com" tabindex="25">lexusinfinita@gmail.com</a><br/>
+      <strong>Managing Director: </strong><a href="mailto:oyoobyron607@gmail.com" tabindex="26">oyoobyron607@gmail.com</a><br/>
+      <strong>Lead Field Researcher: </strong><a href="mailto:siyapeijoy@gmail.com" tabindex="27">siyapeijoy@gmail.com</a><br/>
+      <strong>Lead Research Scientist: </strong><a href="mailto:ojilumba123ramogi@gmail.com" tabindex="28">ojilumba123ramogi@gmail.com</a>
+    </p>
+  </section>
+</main>
+
+<div class="live-chat" role="button" aria-label="Open live chat" tabindex="29" id="liveChatBtn">Live Chat</div>
+
+<!-- Modal for Live Chat -->
+<div class="modal-overlay" id="chatModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="chatTitle">
+    <span class="modal-close" id="chatCloseBtn" role="button" aria-label="Close chat">&times;</span>
+    <h3 id="chatTitle">Live Chat</h3>
+    <div id="chatMessages" aria-live="polite" style="height:200px; overflow-y:auto; border:1px solid #ccc; padding: 8px; margin-bottom: 1rem; background:#f9f9f9; border-radius: 6px;"></div>
+    <textarea id="chatInput" rows="3" placeholder="Type your message here..." aria-label="Chat message input"></textarea>
+    <button type="button" id="chatSendBtn" tabindex="30">Send</button>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div class="live-chat" style="bottom: 90px; right: 25px;" role="button" aria-label="Open booking system" tabindex="31" id="bookingBtn">Book Meeting</div>
+
+<div class="modal-overlay" id="bookingModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <span class="modal-close" id="bookingCloseBtn" role="button" aria-label="Close booking">&times;</span>
+    <h3 id="bookingTitle">Book an Online Meeting</h3>
+    <form id="bookingForm" onsubmit="submitBookingForm(event)" aria-label="Booking form">
+      <input type="text" name="name" placeholder="Your Full Name" required aria-required="true" />
+      <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+      <label for="dateSelect" style="font-weight:600; color:#266dd3; margin-bottom:6px;">Select Date and Time</label>
+      <input type="datetime-local" id="dateSelect" name="datetime" required aria-required="true" style="margin-bottom:1rem;" />
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+<footer>
+<p>© 2025 Ramogi Innovations. All rights reserved.</p>
+<p> Email:<a href="mailto:oyoobyron607@gmail.com">oyoobyron607@gmail.com</a></p>
+<p>WhatsApp: <a href="https://wa.me/254705940726" target="_blank" rel="noopener">+254 705 940 726</a></p>
+<p>Instagram: <a href="https://www.instagram.com/lexus_infinita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@lexus_infinita</a></p>
+<div class="social-icons" aria-label="Social media links">
+  <a href="https://X.com" target="_blank" rel="noopener" aria-label="X" class="icon-link X" title="X">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775a4.932 4.932 0 002.163-2.724c-.951.564-2.005.974-3.127 1.195a4.917 4.917 0 00-8.379 4.482A13.939 13.939 0 011.671 3.149a4.917 4.917 0 001.523 6.574 4.903 4.903 0 01-2.229-.616v.061a4.917 4.917 0 003.946 4.814 4.996 4.996 0 01-2.224.085 4.923 4.923 0 004.596 3.417 9.868 9.868 0 01-6.102 2.105c-.396 0-.787-.022-1.17-.066a13.945 13.945 0 007.548 2.209c9.056 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.015-.633A9.935 9.935 0 0024 4.59z"/>
+    </svg>
+  </a>
+<a href="" target="_blank" rel="noopener" aria-label="Instagram" class="icon-link instagram" title="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.375 2.125a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25zm-4.375 1.625a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 1.5a4 4 0 100 8 4 4 0 000-8z"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/254705940726" target="_blank" rel="noopener" aria-label="WhatsApp" class="icon-link whatsapp" title="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.854 11.854 0 0012 .005C5.382.005 0 5.385 0 12a11.89 11.89 0 001.721 6.01L0 24l6.257-1.642a11.883 11.883 0 005.736 1.48c6.618 0 12-5.38 12-12a11.856 11.856 0 00-3.473-8.358zm-8.517 16.304a9.027 9.027 0 01-4.593-1.273l-.33-.198-3.716.974.992-3.623-.215-.37a9.057 9.057 0 1110.706 4.49 8.867 8.867 0 01-3.144.994zm5.166-6.208c-.283-.142-1.678-.828-1.937-.922-.258-.097-.446-.142-.634.142-.19.283-.732.922-.897 1.11-.164.19-.33.213-.613.071-.282-.143-1.19-.439-2.269-1.4-.84-.746-1.407-1.668-1.57-1.95-.164-.282-.017-.435.126-.576.13-.13.282-.33.423-.495.143-.164.19-.282.284-.47.093-.19.05-.356-.025-.495-.075-.142-.634-1.53-.868-2.087-.228-.55-.46-.475-.634-.485l-.54-.01c-.19 0-.495.07-.754.356-.26.283-.99.968-.99 2.356 0 1.387 1.013 2.726 1.154 2.914.142.19 1.993 3.038 4.828 4.26.675.29 1.2.463 1.611.593.675.215 1.29.185 1.778.112.543-.084 1.678-.685 1.917-1.348.237-.66.237-1.225.166-1.348-.07-.124-.256-.19-.54-.33z"/>
+    </svg>
+  </a>
+</div>  <script src="scripts.js"></script>
+</footer>
+</html>
