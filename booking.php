@@ -1,6 +1,5 @@
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $to = "paschalwao@gmail.com";
     $subject = "Booking Request";
     $name = $_POST["name"] ?? '';
