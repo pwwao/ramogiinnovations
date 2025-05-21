@@ -219,7 +219,13 @@
     <button type="button" id="chatSendBtn" tabindex="30">Send</button>
   </div>
 </div>
-
+<form id="bookingForm" action="booking.php" method="post" aria-label="Booking form">
+  <input type="text" name="name" placeholder="Your Full Name" required aria-required="true" />
+  <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+  <label for="dateSelect" style="font-weight:600; color:#266dd3; margin-bottom:6px;">Select Date and Time</label>
+  <input type="datetime-local" id="dateSelect" name="datetime" required aria-required="true" style="margin-bottom:1rem;" />
+  <button type="submit">Confirm Booking</button>
+</form>
 <!-- Booking Modal -->
 <div class="live-chat" style="bottom: 90px; right: 25px;" role="button" aria-label="Open booking system" tabindex="31" id="bookingBtn">Book Meeting</div>
 
