@@ -88,7 +88,52 @@ nav a::after {
 nav a:hover::after,
 nav a:focus::after {
   width: 100%;
+}.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b0bcf;
+    padding: 10px 20px;
 }
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
 
 /* Sections common style */
 section {
