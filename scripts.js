@@ -135,4 +135,10 @@ const slidesContainer = document.querySelector('.slides');
     }, 5000);
   });
   // Initialize
-  showSlide(0);
+  showSlide(0);// Initialize
+  showSlide(0);const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
